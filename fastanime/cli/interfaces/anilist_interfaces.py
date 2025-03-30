@@ -294,7 +294,7 @@ def media_player_controls(
         # prompt for new quality
         if config.use_fzf:
             quality = fzf.run(
-                options, prompt="Select Quality", header="Quality Options"
+                options, prompt="Select Video Quality", header="Quality Options"
             )
         elif config.use_rofi:
             quality = Rofi.run(options, "Select Quality")
